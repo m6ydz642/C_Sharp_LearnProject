@@ -2,7 +2,7 @@
 
 namespace C_Sharp_LearnProject
 {
-    // 정수형식 예제 프로그램
+    // 3.4.3 정수형식 예제 프로그램
     class MainApp
     {
         static void Main(string[] args)

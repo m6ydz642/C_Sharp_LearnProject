@@ -5,4 +5,14 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="IntegerLiterals\MainApp.cs" />
+    <Compile Remove="IntegerTypes\MainApp.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="IntegerLiterals\MainApp.cs" />
+    <None Include="IntegerTypes\MainApp.cs" />
+  </ItemGroup>
+
 </Project>
