@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -6,13 +6,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Char\MainApp.cs" />
+    <Compile Remove="Decimal\MainApp.cs" />
+    <Compile Remove="FloatingPoint\MainApp.cs" />
     <Compile Remove="IntegerLiterals\MainApp.cs" />
     <Compile Remove="IntegerTypes\MainApp.cs" />
+    <Compile Remove="Overflow\MainApp.cs" />
+    <Compile Remove="SignedUnsigned\MainApp.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Char\MainApp.cs" />
+    <None Include="Decimal\MainApp.cs" />
+    <None Include="FloatingPoint\MainApp.cs" />
     <None Include="IntegerLiterals\MainApp.cs" />
     <None Include="IntegerTypes\MainApp.cs" />
+    <None Include="Overflow\MainApp.cs" />
+    <None Include="SignedUnsigned\MainApp.cs" />
   </ItemGroup>
 
 </Project>
