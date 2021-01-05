@@ -13,6 +13,8 @@
     <Compile Remove="IntegerTypes\MainApp.cs" />
     <Compile Remove="Overflow\MainApp.cs" />
     <Compile Remove="SignedUnsigned\MainApp.cs" />
+    <Compile Remove="String\MainApp.cs" />
+    <Compile Remove="test\MainApp.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,6 +25,8 @@
     <None Include="IntegerTypes\MainApp.cs" />
     <None Include="Overflow\MainApp.cs" />
     <None Include="SignedUnsigned\MainApp.cs" />
+    <None Include="String\MainApp.cs" />
+    <None Include="test\MainApp.cs" />
   </ItemGroup>
 
 </Project>
