@@ -17,6 +17,8 @@
     <Compile Remove="String\MainApp.cs" />
     <Compile Remove="test\MainApp.cs" />
     <Compile Remove="BoxingUnboxing\MainApp.cs" />
+    <Compile Remove="IntegralConversion\MainApp.cs" />
+    <Compile Remove="FloatConversion\MainApp.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,9 +33,13 @@
     <None Include="String\MainApp.cs" />
     <None Include="test\MainApp.cs" />
     <None Include="BoxingUnboxing\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="IntegralConversion\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="FloatConversion\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="IntegralConversion\" />
+    <Folder Include="FloatConversion\" />
+    <Folder Include="SignedUnsignedConversion\" />
   </ItemGroup>
 </Project>
