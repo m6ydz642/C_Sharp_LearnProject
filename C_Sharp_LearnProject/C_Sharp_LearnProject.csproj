@@ -16,6 +16,7 @@
     <Compile Remove="SignedUnsigned\MainApp.cs" />
     <Compile Remove="String\MainApp.cs" />
     <Compile Remove="test\MainApp.cs" />
+    <Compile Remove="BoxingUnboxing\MainApp.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,6 +30,10 @@
     <None Include="SignedUnsigned\MainApp.cs" />
     <None Include="String\MainApp.cs" />
     <None Include="test\MainApp.cs" />
+    <None Include="BoxingUnboxing\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="IntegralConversion\" />
+  </ItemGroup>
 </Project>
