@@ -11,6 +11,7 @@
     <Compile Remove="FloatingPoint\MainApp.cs" />
     <Compile Remove="IntegerLiterals\MainApp.cs" />
     <Compile Remove="IntegerTypes\MainApp.cs" />
+    <Compile Remove="Object\MainApp.cs" />
     <Compile Remove="Overflow\MainApp.cs" />
     <Compile Remove="SignedUnsigned\MainApp.cs" />
     <Compile Remove="String\MainApp.cs" />
@@ -23,6 +24,7 @@
     <None Include="FloatingPoint\MainApp.cs" />
     <None Include="IntegerLiterals\MainApp.cs" />
     <None Include="IntegerTypes\MainApp.cs" />
+    <None Include="Object\MainApp.cs" />
     <None Include="Overflow\MainApp.cs" />
     <None Include="SignedUnsigned\MainApp.cs" />
     <None Include="String\MainApp.cs" />
