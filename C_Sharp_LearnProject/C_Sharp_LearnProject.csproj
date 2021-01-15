@@ -19,6 +19,11 @@
     <Compile Remove="BoxingUnboxing\MainApp.cs" />
     <Compile Remove="IntegralConversion\MainApp.cs" />
     <Compile Remove="FloatConversion\MainApp.cs" />
+    <Compile Remove="SignedUnsignedConversion\MainApp.cs" />
+    <Compile Remove="FloatToIntgral\MainApp.cs" />
+    <Compile Remove="StringNumberConversion\MainApp.cs" />
+    <Compile Remove="Enum\MainApp.cs" />
+    <Compile Remove="Enum %28복사본%29\MainApp.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,11 +40,20 @@
     <None Include="BoxingUnboxing\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
     <None Include="IntegralConversion\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
     <None Include="FloatConversion\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="SignedUnsignedConversion\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="FloatToIntgral\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="StringNumberConversion\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="Enum\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="IntegralConversion\" />
     <Folder Include="FloatConversion\" />
     <Folder Include="SignedUnsignedConversion\" />
+    <Folder Include="FloatToIntgral\" />
+    <Folder Include="테스트_혼자해보기\" />
+    <Folder Include="StringNumberConversion\" />
+    <Folder Include="Enum\" />
+    <Folder Include="UsingVar\" />
   </ItemGroup>
 </Project>
