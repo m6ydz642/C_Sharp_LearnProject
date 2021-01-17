@@ -6,54 +6,76 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Char\MainApp.cs" />
-    <Compile Remove="Decimal\MainApp.cs" />
-    <Compile Remove="FloatingPoint\MainApp.cs" />
-    <Compile Remove="IntegerLiterals\MainApp.cs" />
-    <Compile Remove="IntegerTypes\MainApp.cs" />
-    <Compile Remove="Object\MainApp.cs" />
-    <Compile Remove="Overflow\MainApp.cs" />
-    <Compile Remove="SignedUnsigned\MainApp.cs" />
-    <Compile Remove="String\MainApp.cs" />
-    <Compile Remove="test\MainApp.cs" />
-    <Compile Remove="BoxingUnboxing\MainApp.cs" />
-    <Compile Remove="IntegralConversion\MainApp.cs" />
-    <Compile Remove="FloatConversion\MainApp.cs" />
-    <Compile Remove="SignedUnsignedConversion\MainApp.cs" />
-    <Compile Remove="FloatToIntgral\MainApp.cs" />
-    <Compile Remove="StringNumberConversion\MainApp.cs" />
-    <Compile Remove="Enum\MainApp.cs" />
     <Compile Remove="Enum %28복사본%29\MainApp.cs" />
+    <Compile Remove="3장\BoxingUnboxing\MainApp.cs" />
+    <Compile Remove="3장\Char\MainApp.cs" />
+    <Compile Remove="3장\Decimal\MainApp.cs" />
+    <Compile Remove="3장\Enum\MainApp.cs" />
+    <Compile Remove="3장\FloatConversion\MainApp.cs" />
+    <Compile Remove="3장\FloatingPoint\MainApp.cs" />
+    <Compile Remove="3장\FloatToIntgral\MainApp.cs" />
+    <Compile Remove="3장\IntegerLiterals\MainApp.cs" />
+    <Compile Remove="3장\IntegerTypes\MainApp.cs" />
+    <Compile Remove="3장\IntegralConversion\MainApp.cs" />
+    <Compile Remove="3장\Object\MainApp.cs" />
+    <Compile Remove="3장\Overflow\MainApp.cs" />
+    <Compile Remove="3장\SignedUnsigned\MainApp.cs" />
+    <Compile Remove="3장\SignedUnsignedConversion\MainApp.cs" />
+    <Compile Remove="3장\String\MainApp.cs" />
+    <Compile Remove="3장\StringNumberConversion\MainApp.cs" />
+    <Compile Remove="3장\test\MainApp.cs" />
+    <Compile Remove="3장\UsingVar\MainApp.cs" />
+    <Compile Remove="4장_문자열다루기\StringSearch\MainApp.cs" />
+    <Compile Remove="테스트_혼자해보기\MainApp.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Char\MainApp.cs" />
-    <None Include="Decimal\MainApp.cs" />
-    <None Include="FloatingPoint\MainApp.cs" />
-    <None Include="IntegerLiterals\MainApp.cs" />
-    <None Include="IntegerTypes\MainApp.cs" />
-    <None Include="Object\MainApp.cs" />
-    <None Include="Overflow\MainApp.cs" />
-    <None Include="SignedUnsigned\MainApp.cs" />
-    <None Include="String\MainApp.cs" />
-    <None Include="test\MainApp.cs" />
-    <None Include="BoxingUnboxing\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
-    <None Include="IntegralConversion\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
-    <None Include="FloatConversion\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
-    <None Include="SignedUnsignedConversion\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
-    <None Include="FloatToIntgral\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
-    <None Include="StringNumberConversion\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
-    <None Include="Enum\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="3장\BoxingUnboxing\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="3장\Char\MainApp.cs" />
+    <None Include="3장\Decimal\MainApp.cs" />
+    <None Include="3장\Enum\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="3장\FloatConversion\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="3장\FloatingPoint\MainApp.cs" />
+    <None Include="3장\FloatToIntgral\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="3장\IntegerLiterals\MainApp.cs" />
+    <None Include="3장\IntegerTypes\MainApp.cs" />
+    <None Include="3장\IntegralConversion\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="3장\Object\MainApp.cs" />
+    <None Include="3장\Overflow\MainApp.cs" />
+    <None Include="3장\SignedUnsigned\MainApp.cs" />
+    <None Include="3장\SignedUnsignedConversion\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="3장\String\MainApp.cs" />
+    <None Include="3장\StringNumberConversion\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="3장\test\MainApp.cs" />
+    <None Include="3장\UsingVar\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="4장_부록_문자열다루기\StringSearch\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="테스트_혼자해보기\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="IntegralConversion\" />
-    <Folder Include="FloatConversion\" />
-    <Folder Include="SignedUnsignedConversion\" />
-    <Folder Include="FloatToIntgral\" />
     <Folder Include="테스트_혼자해보기\" />
-    <Folder Include="StringNumberConversion\" />
-    <Folder Include="Enum\" />
-    <Folder Include="UsingVar\" />
+    <Folder Include="3장\" />
+    <Folder Include="3장\BoxingUnboxing\" />
+    <Folder Include="3장\Char\" />
+    <Folder Include="3장\Decimal\" />
+    <Folder Include="3장\Enum\" />
+    <Folder Include="3장\FloatConversion\" />
+    <Folder Include="3장\FloatingPoint\" />
+    <Folder Include="3장\FloatToIntgral\" />
+    <Folder Include="3장\IntegerLiterals\" />
+    <Folder Include="3장\IntegerTypes\" />
+    <Folder Include="3장\IntegralConversion\" />
+    <Folder Include="3장\Object\" />
+    <Folder Include="3장\Overflow\" />
+    <Folder Include="3장\SignedUnsigned\" />
+    <Folder Include="3장\SignedUnsignedConversion\" />
+    <Folder Include="3장\String\" />
+    <Folder Include="3장\StringNumberConversion\" />
+    <Folder Include="3장\test\" />
+    <Folder Include="3장\UsingVar\" />
+    <Folder Include="4장_부록_문자열다루기\" />
+    <Folder Include="4장_부록_문자열다루기\StringSearch\" />
+    <Folder Include="3장\4장_데이터를 가공하는 연산자\" />
+    <Folder Include="3장\4장_데이터를 가공하는 연산자\NullOperator\" />
   </ItemGroup>
 </Project>
