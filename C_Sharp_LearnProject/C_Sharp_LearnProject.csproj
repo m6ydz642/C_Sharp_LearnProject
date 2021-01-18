@@ -26,6 +26,8 @@
     <Compile Remove="3장\test\MainApp.cs" />
     <Compile Remove="3장\UsingVar\MainApp.cs" />
     <Compile Remove="4장_문자열다루기\StringSearch\MainApp.cs" />
+    <Compile Remove="3장\4장_데이터를 가공하는 연산자\NullOperator %28복사본%29\MainApp.cs" />
+    <Compile Remove="3장\4장_데이터를 가공하는 연산자\NullOperator\MainApp.cs" />
     <Compile Remove="테스트_혼자해보기\MainApp.cs" />
   </ItemGroup>
 
@@ -49,6 +51,7 @@
     <None Include="3장\test\MainApp.cs" />
     <None Include="3장\UsingVar\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
     <None Include="4장_부록_문자열다루기\StringSearch\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="3장\4장_데이터를 가공하는 연산자\NullOperator\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
     <None Include="테스트_혼자해보기\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
   </ItemGroup>
 
@@ -77,5 +80,6 @@
     <Folder Include="4장_부록_문자열다루기\StringSearch\" />
     <Folder Include="3장\4장_데이터를 가공하는 연산자\" />
     <Folder Include="3장\4장_데이터를 가공하는 연산자\NullOperator\" />
+    <Folder Include="3장\4장_데이터를 가공하는 연산자\NullCoalescing\" />
   </ItemGroup>
 </Project>
