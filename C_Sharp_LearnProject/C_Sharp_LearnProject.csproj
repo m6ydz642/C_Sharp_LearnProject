@@ -6,6 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="BoxingUnboxing\MainApp.cs" />
+    <Compile Remove="Char\MainApp.cs" />
     <Compile Remove="Enum %28복사본%29\MainApp.cs" />
     <Compile Remove="3장\BoxingUnboxing\MainApp.cs" />
     <Compile Remove="3장\Char\MainApp.cs" />
@@ -36,6 +38,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Char\MainApp.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="3장\BoxingUnboxing\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
     <None Include="3장\Char\MainApp.cs" />
     <None Include="3장\Decimal\MainApp.cs" />
@@ -55,6 +61,7 @@
     <None Include="3장\test\MainApp.cs" />
     <None Include="3장\UsingVar\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
     <None Include="4장_부록_문자열다루기\StringSearch\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="BoxingUnboxing\MainApp.cs" />
     <None Include="테스트_혼자해보기\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
     <None Include="4장_데이터를 가공하는 연산자\NullOperator\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
     <None Include="4장_데이터를 가공하는 연산자\NullConditionalOperator\MainApp.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace C_Sharp_LearnProject.Overflow
+namespace Test
 {
     class MainApp
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace C_Sharp_LearnProject.Overflow
+namespace OverFlow2
 {
     class MainApp
     { // 3.4.6 데이터가 넘쳐흘러요
