@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace StringNumberConversion2
+namespace StringNumberConversion
 {
     class MainApp
     { //3.1.19 문자열을 숫자로, 숫자를 문자열로

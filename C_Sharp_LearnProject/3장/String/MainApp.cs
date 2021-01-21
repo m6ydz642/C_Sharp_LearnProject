@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AnotherString
+namespace C_Sharp_LearnProject.Overflow
 {
     class MainApp
     { // 3.4.10 문자형식과 문자열 형식

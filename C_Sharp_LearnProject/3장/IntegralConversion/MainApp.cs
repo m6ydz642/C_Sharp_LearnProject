@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DifferentSize
+namespace C_Sharp_LearnProject.Overflow
 {
     class MainApp
     { //3.1.15 // 크기가 서로 다른 정수 형식 사이의 변환
