@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace OptionalParameter
+namespace LocalFunction
 {
     class MainApp
     { // 6.10 선택적 매개 변수

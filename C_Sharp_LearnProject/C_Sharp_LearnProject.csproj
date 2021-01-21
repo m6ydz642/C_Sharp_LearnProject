@@ -49,6 +49,7 @@
     <Compile Remove="4장_데이터를 가공하는 연산자\NullConditionalOperator\MainApp.cs" />
     <Compile Remove="4장_데이터를 가공하는 연산자\NullOperator\MainApp.cs" />
     <Compile Remove="4장_부록_문자열다루기\StringSearch\MainApp.cs" />
+    <Compile Remove="6장 메소드 코드 간추리기 - 일부 장 생략\6.10_NamedParameter_뎡명된 매개변수\MainApp.cs" />
     <Compile Remove="6장 메소드 코드 간추리기 - 일부 장 생략\6.8_UsingParams_가변길이 매개변수\MainApp.cs" />
     <Compile Remove="6장 메소드 코드 간추리기 - 일부 장 생략\6.9_NamedParameter_뎡명된 매개변수\MainApp.cs" />
     <Compile Remove="6장 메소드 코드 간추리기 - 일부 장 생략\SwapByRef\MainApp.cs" />
@@ -80,6 +81,7 @@
     <None Include="4장_데이터를 가공하는 연산자\NullConditionalOperator\MainApp.cs" />
     <None Include="4장_데이터를 가공하는 연산자\NullOperator\MainApp.cs" />
     <None Include="4장_부록_문자열다루기\StringSearch\MainApp.cs" />
+    <None Include="6장 메소드 코드 간추리기 - 일부 장 생략\6.10_NamedParameter_뎡명된 매개변수\MainApp.cs" />
     <None Include="6장 메소드 코드 간추리기 - 일부 장 생략\6.8_UsingParams_가변길이 매개변수\MainApp.cs" />
     <None Include="6장 메소드 코드 간추리기 - 일부 장 생략\6.9_NamedParameter_뎡명된 매개변수\MainApp.cs" />
     <None Include="6장 메소드 코드 간추리기 - 일부 장 생략\SwapByRef\MainApp.cs" />
