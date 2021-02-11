@@ -47,13 +47,16 @@
     <Compile Remove="4장 데이터를 가공하는 연산자\NullOperator\MainApp.cs" />
     <Compile Remove="4장부록 문자열 다루기\StringSearch\MainApp.cs" />
     <Compile Remove="6장 메소드 코드 간추리기 - 일부 장 생략\6.10_NamedParameter_뎡명된 매개변수\MainApp.cs" />
+    <Compile Remove="6장 메소드 코드 간추리기 - 일부 장 생략\6.10_OptionalParameter_선택적 인수\MainApp.cs" />
     <Compile Remove="6장 메소드 코드 간추리기 - 일부 장 생략\6.11_LocalFunctionr_로컬 함수\MainApp.cs" />
     <Compile Remove="6장 메소드 코드 간추리기 - 일부 장 생략\6.5_RefReturn_메소드의 결과를 참조로 반환하기\MainApp.cs" />
     <Compile Remove="6장 메소드 코드 간추리기 - 일부 장 생략\6.6_UsingOut_출력 전용 매개변수\MainApp.cs" />
     <Compile Remove="6장 메소드 코드 간추리기 - 일부 장 생략\6.7_Overloading\MainApp.cs" />
     <Compile Remove="6장 메소드 코드 간추리기 - 일부 장 생략\6.8_UsingParams_가변길이 매개변수\MainApp.cs" />
+    <Compile Remove="6장 메소드 코드 간추리기 - 일부 장 생략\6.9_NamedParameter_뎡명된 매개변수\MainApp.cs" />
+    <Compile Remove="6장 메소드 코드 간추리기 - 일부 장 생략\6장연습문제\No1.cs" />
+    <Compile Remove="6장 메소드 코드 간추리기 - 일부 장 생략\6장연습문제\No2.cs" />
     <Compile Remove="6장 메소드 코드 간추리기 - 일부 장 생략\SwapByRef\MainApp.cs" />
-    <Compile Remove="6장 메소드 코드 간추리기 - 일부 장 생략\이미 했었네 ㅋㅋ\MainApp.cs" />
     <Compile Remove="Enum %28복사본%29\MainApp.cs" />
     <Compile Remove="4장_문자열다루기\StringSearch\MainApp.cs" />
     <Compile Remove="테스트\MainApp.cs" />
@@ -83,13 +86,16 @@
     <None Include="4장 데이터를 가공하는 연산자\NullOperator\MainApp.cs" />
     <None Include="4장부록 문자열 다루기\StringSearch\MainApp.cs" />
     <None Include="6장 메소드 코드 간추리기 - 일부 장 생략\6.10_NamedParameter_뎡명된 매개변수\MainApp.cs" />
+    <None Include="6장 메소드 코드 간추리기 - 일부 장 생략\6.10_OptionalParameter_선택적 인수\MainApp.cs" />
     <None Include="6장 메소드 코드 간추리기 - 일부 장 생략\6.11_LocalFunctionr_로컬 함수\MainApp.cs" />
     <None Include="6장 메소드 코드 간추리기 - 일부 장 생략\6.5_RefReturn_메소드의 결과를 참조로 반환하기\MainApp.cs" />
     <None Include="6장 메소드 코드 간추리기 - 일부 장 생략\6.6_UsingOut_출력 전용 매개변수\MainApp.cs" />
     <None Include="6장 메소드 코드 간추리기 - 일부 장 생략\6.7_Overloading\MainApp.cs" />
     <None Include="6장 메소드 코드 간추리기 - 일부 장 생략\6.8_UsingParams_가변길이 매개변수\MainApp.cs" />
+    <None Include="6장 메소드 코드 간추리기 - 일부 장 생략\6.9_NamedParameter_뎡명된 매개변수\MainApp.cs" />
+    <None Include="6장 메소드 코드 간추리기 - 일부 장 생략\6장연습문제\No1.cs" />
+    <None Include="6장 메소드 코드 간추리기 - 일부 장 생략\6장연습문제\No2.cs" />
     <None Include="6장 메소드 코드 간추리기 - 일부 장 생략\SwapByRef\MainApp.cs" />
-    <None Include="6장 메소드 코드 간추리기 - 일부 장 생략\이미 했었네 ㅋㅋ\MainApp.cs" />
     <None Include="테스트\MainApp.cs" />
   </ItemGroup>
 </Project>
