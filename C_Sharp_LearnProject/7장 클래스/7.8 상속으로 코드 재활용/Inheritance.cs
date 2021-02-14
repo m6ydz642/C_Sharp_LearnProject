@@ -4,45 +4,59 @@ using System.Text;
 
 namespace AccessModifier
 {
-  class WaterHeater
+    class Base
     {
-        protected int temperature;
-
-        public void Setemperature(int temperature)
+        protected string Name;
+        public Base(string Name)
         {
-            if (temperature < -5 || temperature > 42)
-            {
-                throw new Exception("Out of temperature range");
-            }
-            this.temperature = temperature;
+            this.Name = Name;
+            Console.WriteLine($"{this.Name}.Base() ");
         }
 
-        internal void TurnOnWater()
+        ~Base()
         {
-            Console.WriteLine($"Turn on water : {temperature}");
+            Console.WriteLine($"{this.Name}.~Base소멸");
         }
+
+        public void BaseMethod()
+        {
+            Console.WriteLine($"{Name}.BaseMethod()호출 ");
+        }
+
+        
     }
 
+
+    class Derived : Base
+    {
+        public Derived(string Name) : base(Name) // Base 클래스의 Name호출
+                                                 // : base는 부모클래스 가르키는 키워드 임
+        {
+            Console.WriteLine($"{this.Name}.Derived() 상속 호출");
+
+        }
+        ~Derived()
+        {
+            Console.WriteLine($"{this.Name} Derived소멸 호출 ");
+        }
+
+        public void DerivedMethod()
+        {
+            Console.WriteLine($"{Name} Dervied()메소드 호출");
+        }
+
+    }
     class MainApp
     {
         static void Main(string[] args)
         {
 
-            try
-            {
-                WaterHeater heater = new WaterHeater();
-                heater.Setemperature(20);
-                heater.TurnOnWater();
+            Base a = new Base("a");
+            a.BaseMethod();
 
-                heater.Setemperature(-2);
-                heater.TurnOnWater();
-
-                heater.Setemperature(50); // 위의 Setemperature 에 if문에 조건에 해당되므로 예외발생
-                heater.TurnOnWater();
-            }catch(Exception e)
-            {
-                Console.WriteLine("e message : {0}", e.Message);
-            }
+            Derived b = new Derived("b");
+            b.BaseMethod();
+            b.DerivedMethod();
 
         }
     }
