@@ -22,6 +22,7 @@
     <None Remove="6장_메소드로 코드 간추리기\**" />
     <None Remove="테스트_혼자해보기\**" />
     <Compile Remove="8장\7.8 상속으로 코드 재활용\Inheritance.cs" />
+    <Compile Remove="7장 클래스\7.14 중첩클래스\NestedClass.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -78,6 +79,7 @@
   <ItemGroup>
     <None Include="7장 클래스\7.13 읽기전용 필드\ReadOnly.cs" />
     <None Include="7장 클래스\7.2_클래스의선언과 객체의 생성\BasicClass.cs" />
+    <None Include="7장 클래스\7.14 중첩클래스\NestedClass.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
   </ItemGroup>
 
   <ItemGroup>
