@@ -24,6 +24,7 @@
     <Compile Remove="8장\7.8 상속으로 코드 재활용\Inheritance.cs" />
     <Compile Remove="8장\test.cs" />
     <Compile Remove="8장\test2.cs" />
+    <Compile Remove="7장 클래스\7.14 중첩클래스\NestedClass.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -82,6 +83,7 @@
     <None Include="7장 클래스\7.2_클래스의선언과 객체의 생성\BasicClass.cs" />
     <None Include="8장\test.cs" />
     <None Include="8장\test2.cs" />
+    <None Include="7장 클래스\7.14 중첩클래스\NestedClass.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
   </ItemGroup>
 
   <ItemGroup>
@@ -128,5 +130,8 @@
     <None Include="6장 메소드 코드 간추리기 - 일부 장 생략\SwapByRef\MainApp.cs" />
     <None Include="7장 클래스\7.8 상속으로 코드 재활용\Inheritance.cs" />
     <None Include="테스트\MainApp.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="7장 클래스\7.15 분할클래스\" />
   </ItemGroup>
 </Project>
