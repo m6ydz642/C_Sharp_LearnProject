@@ -11,8 +11,8 @@ namespace NestedClass
         public void SetConfig(string item, string value)
         {
             ItemValue iv = new ItemValue();
-            Configurtation test = new Configurtation() ;
-            iv.SetValue(test, item, value);
+            iv.SetValue(this, item, value);
+            // this -> Configurtaion 객체를 가르킴
         }
 
         public string GetConfig (string item)
@@ -24,7 +24,7 @@ namespace NestedClass
                     return test.GetValue();
                 }
             }
-            return "";
+            return "값이 없엉";
         }
         private class ItemValue
         {
@@ -72,9 +72,12 @@ namespace NestedClass
         {
 
             Configurtation a = new Configurtation();
-            a.SetConfig("v","1234");
-            Console.WriteLine($"{a.GetConfig("v")}");
-
+            a.SetConfig("version","1234"); // version에 해당하는 값을 가져옴
+            Console.WriteLine($"{a.GetConfig("version")}");
+            a.SetConfig("값을 다르게 넣어 못찾을 경우 ", "다르게 넣을경우");
+            Console.WriteLine($"{a.GetConfig("아무값")}");
+            // 값이 없을 경우 return "값이 없엉" 이 출력됨
+          
         }
     }
 

@@ -23,6 +23,7 @@
     <None Remove="테스트_혼자해보기\**" />
     <Compile Remove="8장\7.8 상속으로 코드 재활용\Inheritance.cs" />
     <Compile Remove="8장\test.cs" />
+    <Compile Remove="8장\test2.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -80,6 +81,7 @@
     <None Include="7장 클래스\7.13 읽기전용 필드\ReadOnly.cs" />
     <None Include="7장 클래스\7.2_클래스의선언과 객체의 생성\BasicClass.cs" />
     <None Include="8장\test.cs" />
+    <None Include="8장\test2.cs" />
   </ItemGroup>
 
   <ItemGroup>
