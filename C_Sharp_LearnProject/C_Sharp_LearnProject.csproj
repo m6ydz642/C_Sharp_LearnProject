@@ -21,6 +21,7 @@
     <None Remove="5장_코드의 흐름 제어 - 생략\**" />
     <None Remove="6장_메소드로 코드 간추리기\**" />
     <None Remove="테스트_혼자해보기\**" />
+    <Compile Remove="8장\7.8 상속으로 코드 재활용\Inheritance.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -77,6 +78,7 @@
   <ItemGroup>
     <None Include="7장 클래스\7.13 읽기전용 필드\ReadOnly.cs" />
     <None Include="7장 클래스\7.2_클래스의선언과 객체의 생성\BasicClass.cs" />
+    <None Include="8장\8장테스트\test.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -126,5 +128,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="8장\" />
+    <Folder Include="8장\8장테스트\" />
   </ItemGroup>
 </Project>
