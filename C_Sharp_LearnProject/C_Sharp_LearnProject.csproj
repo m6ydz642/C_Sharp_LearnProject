@@ -78,7 +78,6 @@
   <ItemGroup>
     <None Include="7장 클래스\7.13 읽기전용 필드\ReadOnly.cs" />
     <None Include="7장 클래스\7.2_클래스의선언과 객체의 생성\BasicClass.cs" />
-    <None Include="8장\8장테스트\test.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -125,9 +124,5 @@
     <None Include="6장 메소드 코드 간추리기 - 일부 장 생략\SwapByRef\MainApp.cs" />
     <None Include="7장 클래스\7.8 상속으로 코드 재활용\Inheritance.cs" />
     <None Include="테스트\MainApp.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="8장\" />
-    <Folder Include="8장\8장테스트\" />
   </ItemGroup>
 </Project>
