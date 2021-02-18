@@ -25,6 +25,7 @@
     <Compile Remove="8장\test.cs" />
     <Compile Remove="8장\test2.cs" />
     <Compile Remove="7장 클래스\7.14 중첩클래스\NestedClass.cs" />
+    <Compile Remove="7장 클래스\7.15 분할클래스\PartialClass.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -84,6 +85,7 @@
     <None Include="8장\test.cs" />
     <None Include="8장\test2.cs" />
     <None Include="7장 클래스\7.14 중첩클래스\NestedClass.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="7장 클래스\7.15 분할클래스\PartialClass.cs" />
   </ItemGroup>
 
   <ItemGroup>
