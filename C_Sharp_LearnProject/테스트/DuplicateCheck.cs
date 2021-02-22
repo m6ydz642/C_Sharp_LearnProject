@@ -10,12 +10,29 @@ namespace DuplicateCheck
 
         {
             Random random = new Random();
-            int rand = random.Next(1,10);
+           
             int[] array = new int[3];
             for (int i=0; i<array.Length; i++)
             {
+                int rand = random.Next(1, 10);
                 array[i] = rand;
-                Console.WriteLine("rand : " + rand);
+                for (int j = 0; j <i; j++) // 다음 인수로 중복검사하게할 값
+                    // i = 0, j = 0일때는 검사 안함
+                {
+                  
+                    Console.WriteLine("array : " + array[i]);
+                     if (array[i] == array[j])
+                    {
+                        Console.WriteLine("중복발견 : " + array[i]);
+                        i--;
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("rand : " + array[i]);
+                    }
+                }
+                
             }
             
         }
