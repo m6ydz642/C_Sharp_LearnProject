@@ -29,6 +29,8 @@
     <Compile Remove="8장\test2.cs" />
     <Compile Remove="7장 클래스\7.14 중첩클래스\NestedClass.cs" />
     <Compile Remove="7장 클래스\7.15 분할클래스\PartialClass.cs" />
+    <Compile Remove="테스트\VoidArray_Test.cs" />
+    <Compile Remove="테스트\MainApp.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -79,7 +81,6 @@
     <Compile Remove="6장 메소드 코드 간추리기 - 일부 장 생략\SwapByRef\MainApp.cs" />
     <Compile Remove="Enum %28복사본%29\MainApp.cs" />
     <Compile Remove="4장_문자열다루기\StringSearch\MainApp.cs" />
-    <Compile Remove="테스트\MainApp.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -92,6 +93,8 @@
     <None Include="8장\test2.cs" />
     <None Include="7장 클래스\7.14 중첩클래스\NestedClass.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
     <None Include="7장 클래스\7.15 분할클래스\PartialClass.cs" />
+    <None Include="테스트\VoidArray_Test.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="테스트\MainApp.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -137,7 +140,6 @@
     <None Include="7장 클래스\7.7 접근 한정자\AccessModifier.cs" />
     <None Include="6장 메소드 코드 간추리기 - 일부 장 생략\SwapByRef\MainApp.cs" />
     <None Include="7장 클래스\7.8 상속으로 코드 재활용\Inheritance.cs" />
-    <None Include="테스트\MainApp.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="7장 클래스\7.15 분할클래스\" />
