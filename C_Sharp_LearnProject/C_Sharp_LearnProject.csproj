@@ -34,6 +34,10 @@
     <Compile Remove="테스트\DuplicateCheck.cs" />
     <Compile Remove="7.15 분할클래스\PartialClass.cs" />
     <Compile Remove="14장\SimpleLambda.cs" />
+    <Compile Remove="14장\StatementLambda.cs" />
+    <Compile Remove="14장\StatementLambda %28복사본%29.cs" />
+    <Compile Remove="14장\FuncTest.cs" />
+    <Compile Remove="14장\FuncTest %28복사본%29.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -101,6 +105,8 @@
     <None Include="테스트\DuplicateCheck.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
     <None Include="7.15 분할클래스\PartialClass.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
     <None Include="14장\SimpleLambda.cs" />
+    <None Include="14장\StatementLambda.cs" />
+    <None Include="14장\FuncTest.cs" />
   </ItemGroup>
 
   <ItemGroup>
