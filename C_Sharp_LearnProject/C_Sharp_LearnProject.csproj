@@ -31,6 +31,9 @@
     <Compile Remove="7장 클래스\7.15 분할클래스\PartialClass.cs" />
     <Compile Remove="테스트\VoidArray_Test.cs" />
     <Compile Remove="테스트\MainApp.cs" />
+    <Compile Remove="테스트\DuplicateCheck.cs" />
+    <Compile Remove="7.15 분할클래스\PartialClass.cs" />
+    <Compile Remove="14장\SimpleLambda.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -95,6 +98,9 @@
     <None Include="7장 클래스\7.15 분할클래스\PartialClass.cs" />
     <None Include="테스트\VoidArray_Test.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
     <None Include="테스트\MainApp.cs" />
+    <None Include="테스트\DuplicateCheck.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="7.15 분할클래스\PartialClass.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="14장\SimpleLambda.cs" />
   </ItemGroup>
 
   <ItemGroup>
