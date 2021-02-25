@@ -31,13 +31,19 @@
     <Compile Remove="7장 클래스\7.15 분할클래스\PartialClass.cs" />
     <Compile Remove="테스트\VoidArray_Test.cs" />
     <Compile Remove="테스트\MainApp.cs" />
-    <Compile Remove="테스트\DuplicateCheck.cs" />
     <Compile Remove="7.15 분할클래스\PartialClass.cs" />
     <Compile Remove="14장\SimpleLambda.cs" />
     <Compile Remove="14장\StatementLambda.cs" />
     <Compile Remove="14장\StatementLambda %28복사본%29.cs" />
     <Compile Remove="14장\FuncTest.cs" />
     <Compile Remove="14장\FuncTest %28복사본%29.cs" />
+    <Compile Remove="14장\ActionTest.cs" />
+    <Compile Remove="테스트\ArrayCheck.cs" />
+    <Compile Remove="테스트\DuplicateCheck.cs" />
+    <Compile Remove="14장\ActionTest %28복사본%29.cs" />
+    <Compile Remove="14장\UsingExpressionTree.cs" />
+    <Compile Remove="14장\UsingExpressionTree %28복사본%29.cs" />
+    <Compile Remove="14장\ExpressionBoiedMember.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -102,11 +108,15 @@
     <None Include="7장 클래스\7.15 분할클래스\PartialClass.cs" />
     <None Include="테스트\VoidArray_Test.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
     <None Include="테스트\MainApp.cs" />
-    <None Include="테스트\DuplicateCheck.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
     <None Include="7.15 분할클래스\PartialClass.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
     <None Include="14장\SimpleLambda.cs" />
     <None Include="14장\StatementLambda.cs" />
     <None Include="14장\FuncTest.cs" />
+    <None Include="14장\ActionTest.cs" />
+    <None Include="테스트\ArrayCheck.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="테스트\DuplicateCheck.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="14장\UsingExpressionTree.cs" />
+    <None Include="14장\ExpressionBoiedMember.cs" />
   </ItemGroup>
 
   <ItemGroup>
