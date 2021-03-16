@@ -30,6 +30,8 @@
     <Compile Remove="8장\test2.cs" />
     <Compile Remove="7장 클래스\7.14 중첩클래스\NestedClass.cs" />
     <Compile Remove="7장 클래스\7.15 분할클래스\PartialClass.cs" />
+    <Compile Remove="Getter_Setter테스트\Getter_Setter_Main.cs" />
+    <Compile Remove="Getter_Setter테스트\Getter_Setter_Value.cs" />
     <Compile Remove="테스트\VoidArray_Test.cs" />
     <Compile Remove="테스트\MainApp.cs" />
     <Compile Remove="7.15 분할클래스\PartialClass.cs" />
@@ -108,6 +110,8 @@
     <None Include="8장\test2.cs" />
     <None Include="7장 클래스\7.14 중첩클래스\NestedClass.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
     <None Include="7장 클래스\7.15 분할클래스\PartialClass.cs" />
+    <None Include="Getter_Setter테스트\Getter_Setter_Main.cs" />
+    <None Include="Getter_Setter테스트\Getter_Setter_Value.cs" />
     <None Include="테스트\VoidArray_Test.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
     <None Include="테스트\MainApp.cs" />
     <None Include="7.15 분할클래스\PartialClass.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
