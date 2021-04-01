@@ -5,6 +5,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
   <ItemGroup>
     <Compile Remove="4장_데이터를 가공하는 연산자\**" />
     <Compile Remove="4장_부록_문자열다루기\**" />
@@ -32,6 +36,7 @@
     <Compile Remove="7장 클래스\7.15 분할클래스\PartialClass.cs" />
     <Compile Remove="Getter_Setter테스트\Getter_Setter_Main.cs" />
     <Compile Remove="Getter_Setter테스트\Getter_Setter_Value.cs" />
+    <Compile Remove="테스트\ActionTest.cs" />
     <Compile Remove="테스트\VoidArray_Test.cs" />
     <Compile Remove="테스트\MainApp.cs" />
     <Compile Remove="7.15 분할클래스\PartialClass.cs" />
@@ -112,6 +117,7 @@
     <None Include="7장 클래스\7.15 분할클래스\PartialClass.cs" />
     <None Include="Getter_Setter테스트\Getter_Setter_Main.cs" />
     <None Include="Getter_Setter테스트\Getter_Setter_Value.cs" />
+    <None Include="테스트\ActionTest.cs" />
     <None Include="테스트\VoidArray_Test.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
     <None Include="테스트\MainApp.cs" />
     <None Include="7.15 분할클래스\PartialClass.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
