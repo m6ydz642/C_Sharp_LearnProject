@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C_Sharp_LearnProject", "C_Sharp_LearnProject\C_Sharp_LearnProject.csproj", "{43239FEB-89F0-49E6-AD03-83F9A7C7EFE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C_Sharp_LearnProject", "C_Sharp_LearnProject\C_Sharp_LearnProject.csproj", "{43239FEB-89F0-49E6-AD03-83F9A7C7EFE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C_Sharp_Math_Paractice", "C_Sharp_Math_Paractice\C_Sharp_Math_Paractice.csproj", "{072004E2-3863-44D0-BFDB-B942ED2D5478}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{43239FEB-89F0-49E6-AD03-83F9A7C7EFE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43239FEB-89F0-49E6-AD03-83F9A7C7EFE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43239FEB-89F0-49E6-AD03-83F9A7C7EFE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{072004E2-3863-44D0-BFDB-B942ED2D5478}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{072004E2-3863-44D0-BFDB-B942ED2D5478}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{072004E2-3863-44D0-BFDB-B942ED2D5478}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{072004E2-3863-44D0-BFDB-B942ED2D5478}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
