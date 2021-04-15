@@ -2,16 +2,17 @@
 
 namespace C_Sharp_Math_Paractice
 {
-    class Venn_Diagram
+    class Set_Venn_Diagram
     {
         /// <summary>
         /// 벤다이어그램 연습문제
         /// </summary>
         public void Get_Paractice()
         {
+            // 집합
             // 문제2 
             // 12보다 작은 자연수의 집합을 A라고 할 때 기호 쓰기 (기호는 지원안되서 다른 문자로 대체함 --> 해당안함)
-            int A; // 집합
+            int A;
             string result;
             int resultInt;
             A = 12;
