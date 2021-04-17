@@ -25,9 +25,10 @@ namespace C_Sharp_Math_Paractice
 
                 for (int i = 0; i < A.Length; i++)
                 {
+                    Console.Write(A[i]);
                     if (A[i] == B[i])
                     {
-                        Console.Write(A[i]);
+                      
                         count++;
 
                         if (count < 2)
@@ -48,6 +49,37 @@ namespace C_Sharp_Math_Paractice
             { // 블럭문 지정
                 int[] A = new int[3] { 1, 3, 5 };
                 int[] B = new int[4] { 1, 3, 6,7 };
+                string result;
+                int resultInt;
+                int count = 0;
+
+                Console.Write("{");
+                for (int i = 0; i < A.Length; i++)
+                {
+                    Console.Write(A[i]);
+                    if (A[i] == B[i])
+                    {
+                        
+                        count++;
+
+                        if (count < 3)
+                        {
+                            Console.Write(", ");
+                        }
+                    }
+                }
+
+                Console.Write("} ");
+
+                if (count >= 3)
+                {
+                    Console.WriteLine("A는 B에 해당함");
+                }
+                else
+                {
+                    Console.WriteLine("A는 B에 해당안함");
+                }
+
             }
 
         }
