@@ -16,6 +16,11 @@ namespace C_Sharp_Math_Paractice
             set_venn.Get_Paractice();
             SubSet_Venn_Diagram subset_venn = new SubSet_Venn_Diagram(); // 부분집합
             subset_venn.Get_Paractice();
+
+            Intersection_Venn_Diagram intersection = new Intersection_Venn_Diagram(); // 교집합
+            intersection.Get_Paractice();
+
+
         }
     }
 }
