@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace C_Sharp_Math_Paractice
 {
@@ -20,9 +21,10 @@ namespace C_Sharp_Math_Paractice
             string[] B = new string[4] { "석굴암", "불국사", "창덕궁", "종묘" };
             string[] C = new string[A.Length];
             int count = 0;
-            for (int i=0; i<A.Length; i++)
+
+            for (int i = 0; i < A.Length; i++)
             {
-               for (int j=0; j<B.Length; j++)
+                for (int j = 0; j < B.Length; j++)
                 {
                     if (A[i].Equals(B[j]))
                     {
@@ -31,8 +33,21 @@ namespace C_Sharp_Math_Paractice
                         Console.WriteLine("A∩B = " + C[i]);
                     }
                 }
-               
+
+                // LINQ로도 출력해보기
+                var data = from num in C
+                           where num != null
+                           orderby num
+                           select num;
+
+                foreach (var num in data)
+                {
+
+                    Console.WriteLine("data LINQ : " + num);
+                }
+
             }
+
 
 
 
