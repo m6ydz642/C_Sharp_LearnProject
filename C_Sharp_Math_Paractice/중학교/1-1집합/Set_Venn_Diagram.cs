@@ -9,7 +9,7 @@ namespace C_Sharp_Math_Paractice
         /// </summary>
         public void Get_Paractice()
         {
-            // 집합
+            // 집합 기초
             // 문제2 
             // 12보다 작은 자연수의 집합을 A라고 할 때 기호 쓰기 (기호는 지원안되서 다른 문자로 대체함 --> 해당안함)
             int A;
