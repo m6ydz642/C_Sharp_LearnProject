@@ -20,6 +20,10 @@ namespace C_Sharp_Math_Paractice
             Intersection_Venn_Diagram intersection = new Intersection_Venn_Diagram(); // 교집합
             intersection.Get_Paractice();
 
+            Union_Venn_Diagram Unionvenn = new Union_Venn_Diagram(); // 합집합
+            Unionvenn.Get_Paractice();
+
+
 
         }
     }
