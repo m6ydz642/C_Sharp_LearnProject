@@ -35,19 +35,22 @@ namespace C_Sharp_Math_Paractice
                     }
                 }
 
-                // LINQ로도 출력해보기
-                var data = from num in C
-                           where num != null
-                           orderby num
-                           select num;
-
-                foreach (var num in data)
-                {
-
-                    Console.WriteLine("LINQ A∩B = " + num);
-                }
-
+              
             }
+
+            // LINQ로도 출력해보기
+            var data = from num in C
+                       where num != null
+                       orderby num
+                       select num;
+
+            foreach (var num in data)
+            {
+
+                Console.WriteLine("LINQ A∩B = " + num);
+            }
+
+
 
 
 
