@@ -24,7 +24,7 @@ namespace C_Sharp_Math_Paractice
             intersection.Get_Paractice();
             Console.WriteLine();
 
-            Union_Venn_Diagram Unionvenn = new Union_Venn_Diagram(); // 합집합
+            Power_Number Unionvenn = new Power_Number(); // 합집합
             Unionvenn.Get_Paractice();
             Console.WriteLine();
 
@@ -32,6 +32,9 @@ namespace C_Sharp_Math_Paractice
             Complement.Get_Paractice();
             Console.WriteLine();
 
+            Power_Number number = new Power_Number(); // 거듭제곱 자연수
+            number.Get_Paractice();
+            Console.WriteLine();
 
 
 
