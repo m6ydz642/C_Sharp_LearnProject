@@ -36,6 +36,8 @@ namespace C_Sharp_Math_Paractice
             number.Get_Paractice();
             Console.WriteLine();
 
+            Small_phosphorus_decomposition Soinsu = new Small_phosphorus_decomposition();
+            Soinsu.Soinsu(); // 소인수 분해 람다식으로 호출
 
 
         }
