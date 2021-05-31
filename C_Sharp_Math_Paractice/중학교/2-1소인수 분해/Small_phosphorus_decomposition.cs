@@ -26,19 +26,23 @@ namespace C_Sharp_Math_Paractice
                     SoinsuNumber = result[i];
                 }
             }
+
             SoinsuNumber = 20;
-            // 리스트 버전
-            List<int> Listresult = new List<int>();
+            string test = "";
+            int result2 = 0;
+           // 리스트 버전
+           List<int> Listresult = new List<int>();
             Listresult.Add(SoinsuNumber); // 0번째로 넣음
 
-            for (int i = 1; i <= 5; i++)
+            int j = 0; // 리스트 배열 세어주는 변수
+            for (int i = 2; i <= 10; i++)
             {
-
-
-                if (Listresult.IndexOf(i) % i == 0)
+                if (SoinsuNumber % i == 0)
                 {
-                    Listresult.Add(SoinsuNumber / 2);
-                    SoinsuNumber = Listresult.IndexOf(i);
+                    result2 = SoinsuNumber / i;
+                    Listresult.Add(result2);
+                    SoinsuNumber = Listresult[j];
+                    j++;
                 }
             }
 
