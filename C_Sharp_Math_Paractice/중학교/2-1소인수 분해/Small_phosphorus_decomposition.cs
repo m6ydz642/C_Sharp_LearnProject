@@ -18,12 +18,12 @@ namespace C_Sharp_Math_Paractice
             // 배열버전
             int[] result = new int[10];
 
-            for (int i=1; i<= 5; i++)
+            for (int k=1; k<= 5; k++)
             {
-                if (result[i] % i == 0)
+                if (result[k] % k == 0)
                 {
-                    result[i] = SoinsuNumber / 2;
-                    SoinsuNumber = result[i];
+                    result[k] = SoinsuNumber / 2;
+                    SoinsuNumber = result[k];
                 }
             }
 
@@ -35,15 +35,31 @@ namespace C_Sharp_Math_Paractice
             Listresult.Add(SoinsuNumber); // 0번째로 넣음
 
             int j = 0; // 리스트 배열 세어주는 변수
-            for (int i = 2; i <= 10; i++)
+            int i = 2;
+            while (i < 10) 
             {
-                if (SoinsuNumber % i == 0)
+      
+                if (SoinsuNumber % 2 == 0)
                 {
+                    j++;
+                    result2 = SoinsuNumber / 2; // 2로 우선 나누어 보다가 안되면 밑에 else문으로 빠져서 3,4,5 올리면서 나누기를 시도함
+                    Listresult.Add(result2);
+                    SoinsuNumber = Listresult[j];
+                    
+                }
+                else
+                {
+                    i++;
                     result2 = SoinsuNumber / i;
                     Listresult.Add(result2);
                     SoinsuNumber = Listresult[j];
-                    j++;
                 }
+
+            }
+
+            for (int k=0; k< Listresult.Count; k++)
+            {
+                Console.WriteLine("소인수 분해 : " + Listresult[k]);
             }
 
         };
