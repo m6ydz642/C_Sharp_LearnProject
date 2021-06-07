@@ -39,6 +39,9 @@ namespace C_Sharp_Math_Paractice
             Small_phosphorus_decomposition Soinsu = new Small_phosphorus_decomposition();
             Soinsu.Soinsu(); // 소인수 분해 람다식으로 호출
 
+            Small_phosphorus_decomposition2 Soinsu2 = new Small_phosphorus_decomposition2();
+            Soinsu2.Soinsu2(); // 소인수 분해2 + 약수 구하기 람다식으로 호출
+
 
         }
     }

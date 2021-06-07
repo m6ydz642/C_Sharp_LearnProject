@@ -15,7 +15,7 @@ namespace C_Sharp_Math_Paractice
        public Action Soinsu = () =>
         {
             int SoinsuNumber = 20;
-            // 배열버전
+            // 배열 버전
             int[] result = new int[10];
 
             for (int k=1; k<= 5; k++)
@@ -28,7 +28,7 @@ namespace C_Sharp_Math_Paractice
             }
 
             SoinsuNumber = 20;
-            string test = "";
+ 
             int result2 = 0;
            // 리스트 버전
            List<int> Listresult = new List<int>();
@@ -61,7 +61,7 @@ namespace C_Sharp_Math_Paractice
             {
                 Console.WriteLine("소인수 분해 : " + Listresult[k]);
             }
-
+            Console.WriteLine();
         };
     
 
