@@ -89,7 +89,7 @@ namespace C_Sharp_Math_Paractice
            SoinsuNumberList = new List<int>();
 
            j = 2; // 나눌대상
-           for (int i =0; i < 10; i++)
+           for (int i =0; i <= SoinSu_Number; i++) // 소인수가 나눠질때 계속 반영되서 i보다 작을때까지
            {
                if (SoinSu_Number % j == 0)
                {
