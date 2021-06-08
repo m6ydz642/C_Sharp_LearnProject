@@ -81,10 +81,31 @@ namespace C_Sharp_Math_Paractice
                }
 
            }
+           // 그냥 수를 한개 정해서 그걸로 비교 후 카운트로 소인수 몇 승인지 정하는 걸로
+
+           // 소인수 분해 구하기
+           SoinSu_Number = 20;
+           int result2 = 0;
+           SoinsuNumberList = new List<int>();
+
+           j = 2; // 나눌대상
+           for (int i =0; i < 10; i++)
+           {
+               if (SoinSu_Number % j == 0)
+               {
+                   SoinSu_Number = SoinSu_Number / j; // 2로 우선 나누어 보다가 안되면 밑에 else문으로 빠져서 3,4,5 올리면서 나누기를 시도함
+                   SoinsuNumberList.Add(j);
+
+               }
+               else
+               {
+                  j++;
+               }
+           }
 
 
 
-       };
+           };
     
 
     }
