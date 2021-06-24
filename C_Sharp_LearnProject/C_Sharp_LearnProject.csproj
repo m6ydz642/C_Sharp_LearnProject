@@ -39,6 +39,8 @@
     <Compile Remove="테스트\ActionTest.cs" />
     <Compile Remove="테스트\ArrayTest.cs" />
     <Compile Remove="테스트\PointerTest.cs" />
+    <Compile Remove="테스트\RambdaTest.cs" />
+    <Compile Remove="테스트\ShareValueClass.cs" />
     <Compile Remove="테스트\VoidArray_Test.cs" />
     <Compile Remove="테스트\MainApp.cs" />
     <Compile Remove="7.15 분할클래스\PartialClass.cs" />
@@ -107,6 +109,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ApplicationDefinition Include="테스트\ShareValueClass.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="13장 대리자와 이벤트\Delegate.cs" />
     <None Include="13장 대리자와 이벤트\NoDelegate_UsingCallback.cs" />
     <None Include="13장 대리자와 이벤트\UsingCallback.cs" />
@@ -122,6 +128,7 @@
     <None Include="테스트\ActionTest.cs" />
     <None Include="테스트\ArrayTest.cs" />
     <None Include="테스트\PointerTest.cs" />
+    <None Include="테스트\RambdaTest.cs" />
     <None Include="테스트\VoidArray_Test.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
     <None Include="테스트\MainApp.cs" />
     <None Include="7.15 분할클래스\PartialClass.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
