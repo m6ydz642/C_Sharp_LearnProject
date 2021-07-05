@@ -21,25 +21,27 @@ namespace C_Sharp_LearnProject.테스트
             tb2.Columns.Add("Value");
             tb2.Columns.Add("Gbn");
             tb2.Columns.Add("Month");
-            tb2.Rows.Add("1H80000", "", "01", "");
+         //   tb2.Rows.Add("1H80000", "", "01", "");
             tb2.Rows.Add("1H70000", "", "01", "");
             tb2.Rows.Add("1H60000", "", "01", "");
             tb2.Rows.Add("1H50000", "", "01", "");
 
-            tb2.Rows.Add("1H80000", "", "02", "");
+         //   tb2.Rows.Add("1H80000", "", "02", "");
             tb2.Rows.Add("1H70000", "", "02", "");
             tb2.Rows.Add("1H60000", "", "02", "");
             tb2.Rows.Add("1H50000", "", "02", "");
 
-            // 가짜데이터
+            // 테스트 데이터
             tb3.Columns.Add("WkCd");
             tb3.Columns.Add("Value");
             tb3.Columns.Add("Gbn");
             tb3.Columns.Add("Month");
-            tb3.Rows.Add("1H80000", "10", "01", "07");
+         //   tb3.Rows.Add("1H80000", "10", "01", "07");
             tb3.Rows.Add("1H70000", "11", "01", "07");
+            tb3.Rows.Add("1H70000", "19", "02", "07");//  임의 순서 변경
             tb3.Rows.Add("1H60000", "12", "01", "07");
             tb3.Rows.Add("1H50000", "13", "01", "07");
+            tb3.Rows.Add("1H50000", "99", "02", "07"); //  임의 순서 변경
     
 
             tb1.Columns.Add("Code");
@@ -66,6 +68,9 @@ namespace C_Sharp_LearnProject.테스트
                             select a;
 
 
+            DataView dv = new DataView(tb3);
+            dv.Sort = "Gbn ASC, WkCd DESC";
+               tb3 = dv.ToTable();
             int j = 0;
             foreach (DataRow row in tb3.Rows) // 원래 데이터
             {
