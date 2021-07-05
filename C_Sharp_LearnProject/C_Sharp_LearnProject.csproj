@@ -38,6 +38,7 @@
     <Compile Remove="Getter_Setter테스트\Getter_Setter_Value.cs" />
     <Compile Remove="테스트\ActionTest.cs" />
     <Compile Remove="테스트\ArrayTest.cs" />
+    <Compile Remove="테스트\DateTimeParse.cs" />
     <Compile Remove="테스트\PointerTest.cs" />
     <Compile Remove="테스트\RambdaTest.cs" />
     <Compile Remove="테스트\ShareValueClass.cs" />
@@ -127,6 +128,7 @@
     <None Include="Getter_Setter테스트\Getter_Setter_Value.cs" />
     <None Include="테스트\ActionTest.cs" />
     <None Include="테스트\ArrayTest.cs" />
+    <None Include="테스트\DateTimeParse.cs" />
     <None Include="테스트\PointerTest.cs" />
     <None Include="테스트\RambdaTest.cs" />
     <None Include="테스트\VoidArray_Test.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
