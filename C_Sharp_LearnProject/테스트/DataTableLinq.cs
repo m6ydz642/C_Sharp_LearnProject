@@ -13,6 +13,7 @@ namespace C_Sharp_LearnProject.테스트
       
         static void Main(string[] args)
         {
+            // 공백 데이터도 표시하여 조회처리
             DataTable tmpdata = new DataTable(); ; // 바꿔치기용 데이터
             DataTable insertdata = new DataTable(); // 유저가 삽입하는 데이터
             DataTable originaldata = new DataTable(); // 원본 데이터 (코드 전용)
@@ -36,7 +37,7 @@ namespace C_Sharp_LearnProject.테스트
             insertdata.Columns.Add("Month");
     
 
-            insertdata.Rows.Add("1H70000", "99", "01", "07"); 
+            insertdata.Rows.Add("1H70000", "789", "01", "07"); 
             insertdata.Rows.Add("1H50000", "978", "02", "07"); // 순서 상관없이 랜덤한 숫자 입력
 
             originaldata.Columns.Add("Code");
@@ -79,6 +80,7 @@ namespace C_Sharp_LearnProject.테스트
                 
             }
 
+            string NowMonth = DateTime.Now.ToString("MM");
             for (int i = 0; i < insertdata.Rows.Count ; i++) // insert데이터 만큼 반복해야 데이터가 1개 더라도 비교 할 수 있음
             {
                 DataRow rows = insertdata.Rows[i]; // 데이터가 1개일때 1개만큼을 tmpdata를 반복하면서 코드를 찾아냄
@@ -98,6 +100,7 @@ namespace C_Sharp_LearnProject.테스트
                         row["WkCd"]= insertWkcd; // 사용자가 입력했던 값과 tmpdata에 데이터가 같은 코드면 변경처리
                         row["Gbn"] = insertGbn;
                         row["Value"] = insertValue;
+                        row["Month"] = NowMonth;
                     }
 
                 }
