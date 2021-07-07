@@ -13,46 +13,100 @@ namespace C_Sharp_LearnProject.테스트
       
         static void Main(string[] args)
         {
-            DataTable tb1 = new DataTable();
-            DataTable tb2 = new DataTable();
-            DataTable tb3 = new DataTable();
+            DataTable tmpdata = new DataTable(); ; // 바꿔치기용 데이터
+            DataTable insertdata = new DataTable(); // 유저가 삽입하는 데이터
+            DataTable originaldata = new DataTable(); // 원본 데이터 (코드 전용)
 
-            tb2.Columns.Add("WkCd");
-            tb2.Columns.Add("Value");
-            tb2.Columns.Add("Gbn");
-            tb2.Columns.Add("Month");
-         //   tb2.Rows.Add("1H80000", "", "01", "");
-            tb2.Rows.Add("1H70000", "", "01", "");
-            tb2.Rows.Add("1H60000", "", "01", "");
-            tb2.Rows.Add("1H50000", "", "01", "");
+            tmpdata.Columns.Add("WkCd");
+            tmpdata.Columns.Add("Value");
+            tmpdata.Columns.Add("Gbn");
+            tmpdata.Columns.Add("Month");
+            tmpdata.Columns.Add("Name");
 
-         //   tb2.Rows.Add("1H80000", "", "02", "");
-            tb2.Rows.Add("1H70000", "", "02", "");
-            tb2.Rows.Add("1H60000", "", "02", "");
-            tb2.Rows.Add("1H50000", "", "02", "");
+            tmpdata.Rows.Add("1H70000", "0", "01", "", "");
+            tmpdata.Rows.Add("1H70000", "0", "02", "", "");
+            tmpdata.Rows.Add("1H60000", "0", "01", "", "");
+            tmpdata.Rows.Add("1H60000", "0", "02", "", "");
+            tmpdata.Rows.Add("1H50000", "0", "01", "", "");
+            tmpdata.Rows.Add("1H50000", "0", "02", "", "");
 
-            // 테스트 데이터
-            tb3.Columns.Add("WkCd");
-            tb3.Columns.Add("Value");
-            tb3.Columns.Add("Gbn");
-            tb3.Columns.Add("Month");
-         //   tb3.Rows.Add("1H80000", "10", "01", "07");
-            tb3.Rows.Add("1H70000", "11", "01", "07");
-            tb3.Rows.Add("1H70000", "19", "02", "07");//  임의 순서 변경
-            tb3.Rows.Add("1H60000", "12", "01", "07");
-            tb3.Rows.Add("1H50000", "13", "01", "07");
-            tb3.Rows.Add("1H50000", "99", "02", "07"); //  임의 순서 변경
+            insertdata.Columns.Add("WkCd");
+            insertdata.Columns.Add("Value");
+            insertdata.Columns.Add("Gbn");
+            insertdata.Columns.Add("Month");
     
 
-            tb1.Columns.Add("Code");
-            tb1.Columns.Add("Name");
-            tb1.Rows.Add("1H80000", "테스트코드1");
-            tb1.Rows.Add("1H70000", "테스트코드2");
-            tb1.Rows.Add("1H60000", "테스트코드3");
-            tb1.Rows.Add("1H50000", "테스트코드4");
+            insertdata.Rows.Add("1H70000", "99", "01", "07"); 
+            insertdata.Rows.Add("1H50000", "978", "02", "07"); // 순서 상관없이 랜덤한 숫자 입력
+
+            originaldata.Columns.Add("Code");
+            originaldata.Columns.Add("Name");
+            originaldata.Rows.Add("1H70000", "테스트코드2");
+            originaldata.Rows.Add("1H60000", "테스트코드3");
+            originaldata.Rows.Add("1H50000", "테스트코드4");
+            /* // 데이터 정렬
+            DataView dv = new DataView(tb3);
+            dv.Sort = "Gbn ASC, WkCd DESC";
+            tb3 = dv.ToTable();
+            */
+
+            string insertWkcd = "";
+            string insertGbn = "";
+            string insertValue = "";
+
+            string tmpdataWkCd = "";
+            string tmpdataGbn = "";
+            string tmpdataValue = "";
+
+            // tmpdata에 original data의 이름을 삽입 하여 이름 매칭 하는 작업
+ 
+
+                foreach (DataRow row in originaldata.Rows) //
+                {
+                string Code = row.Field<string>("Code"); 
+                string Name = row.Field<string>("Name");
+
+                foreach (DataRow rows in tmpdata.Rows) //
+                {
+                    tmpdataWkCd = rows.Field<string>("WkCd");
+
+                    if (Code.Equals(tmpdataWkCd))
+                    
+                    {
+                        rows["Name"] = Name; // 원본 코드에 Name과 tmpdata에 코드에 해당하는 이름을 찾아 변경
+                    }
+                }
+                
+            }
+
+            for (int i = 0; i < insertdata.Rows.Count ; i++) // insert데이터 만큼 반복해야 데이터가 1개 더라도 비교 할 수 있음
+            {
+                DataRow rows = insertdata.Rows[i]; // 데이터가 1개일때 1개만큼을 tmpdata를 반복하면서 코드를 찾아냄
+                insertWkcd = rows.Field<string>("WkCd"); // insert데이터에 들어있는 WkCd를 찾아냄
+                insertGbn = rows.Field<string>("Gbn"); 
+                insertValue = rows.Field<string>("Value"); 
+
+                foreach (DataRow row in tmpdata.Rows) // 가짜 데이터 만큼 반복하면서 코드를 찾아내어 가짜 데이터의 데이터를 진짜로 바꿀 반복문 
+                {
+                    tmpdataWkCd = row.Field<string>("WkCd"); // tmp 데이터에 들어있는 WkCd를 찾아냄
+                    tmpdataGbn = row.Field<string>("Gbn");
+                    tmpdataValue = row.Field<string>("Value");
+
+                    if (insertWkcd.Equals(tmpdataWkCd) && insertGbn.Equals(tmpdataGbn)) 
+                        // insert(사용자 입력) wkcd, gbn와 tmpdata들어있는 wkcd, gbn 을 찾아내어 기존 tmpdata내용을 사용자 입력 데이터로 바꿀 거임
+                    {
+                        row["WkCd"]= insertWkcd; // 사용자가 입력했던 값과 tmpdata에 데이터가 같은 코드면 변경처리
+                        row["Gbn"] = insertGbn;
+                        row["Value"] = insertValue;
+                    }
+
+                }
+            }
 
 
-            var leftJoin = from tb1s in tb2.AsEnumerable()
+
+            // linq  
+            /*var leftJoin = from tb1s in tb2.AsEnumerable()
                            join tb2s in tb3.AsEnumerable()
                            on tb1s.Field<string>("WkCd") equals tb2s.Field<string>("WkCd") into dataKey
                            from tbResult in dataKey.DefaultIfEmpty()
@@ -65,28 +119,10 @@ namespace C_Sharp_LearnProject.테스트
 
             var joinTable = from a in leftJoin.AsEnumerable()
                             where a.ID2 == null || a.ID2 != null
-                            select a;
+                            select a;*/
 
 
-            DataView dv = new DataView(tb3);
-            dv.Sort = "Gbn ASC, WkCd DESC";
-               tb3 = dv.ToTable();
-            int j = 0;
-            foreach (DataRow row in tb3.Rows) // 원래 데이터
-            {
-                DataRow row_tb2 = tb2.Rows[j];
-                string WkCd = row_tb2.Field<string>("WkCd");
-                string Value= row_tb2.Field<string>("Value");
-                string Month = row_tb2.Field<string>("Month");
-
-                if(WkCd == row.Field<string>("WkCd"))
-                {
-                    // row_tb2.Table.Rows[j][j] = row.Field<string>("Value");
-                    row_tb2["Value"] = row.Field<string>("Value");
-                    row_tb2["Month"] = row.Field<string>("Month");
-                }
-                j++;
-            }
+            DataTable SelectData = tmpdata; // 데이터 가공 성공 및 다른 테이블에 넣어보기
     
 
          
