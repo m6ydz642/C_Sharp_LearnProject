@@ -7,7 +7,7 @@ using System.Text;
 namespace C_Sharp_LearnProject.테스트
 {
 
-    class DataTableLinq
+    class DataTableSort
     {
 
       
@@ -24,7 +24,12 @@ namespace C_Sharp_LearnProject.테스트
             tmpdata.Columns.Add("Month");
             tmpdata.Columns.Add("Name");
 
-            tmpdata.Rows.Add("1H70000", "0", "01", "", "");
+            //DB에 들어있는 데이터라 가정
+            // DB에 들어있는 데이터를 가져왔다면 반복문으로
+            // tmpdata.Rows.Add(Code,, "0", "01", "", ""); 
+            // tmpdata.Rows.Add(Code,, "0", "02", "", ""); 
+            // 해서 넣으면 됨
+            tmpdata.Rows.Add("1H70000", "0", "01", "", ""); 
             tmpdata.Rows.Add("1H70000", "0", "02", "", "");
             tmpdata.Rows.Add("1H60000", "0", "01", "", "");
             tmpdata.Rows.Add("1H60000", "0", "02", "", "");
@@ -108,22 +113,7 @@ namespace C_Sharp_LearnProject.테스트
 
 
 
-            // linq  
-            /*var leftJoin = from tb1s in tb2.AsEnumerable()
-                           join tb2s in tb3.AsEnumerable()
-                           on tb1s.Field<string>("WkCd") equals tb2s.Field<string>("WkCd") into dataKey
-                           from tbResult in dataKey.DefaultIfEmpty()
-                           select new
-                           {
-                               WkCd = tb1s.Field<string>("WkCd"),
-                             //  Name = tb1s.Field<string>("Name"),
-                               ID2 = (tbResult == null ? null : tbResult.Field<string>("Gbn"))
-                           };
-
-            var joinTable = from a in leftJoin.AsEnumerable()
-                            where a.ID2 == null || a.ID2 != null
-                            select a;*/
-
+         
 
             DataTable SelectData = tmpdata; // 데이터 가공 성공 및 다른 테이블에 넣어보기
     
