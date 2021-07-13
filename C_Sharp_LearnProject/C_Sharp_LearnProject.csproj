@@ -29,9 +29,8 @@
     <Compile Remove="13장 대리자와 이벤트\NoDelegate_UsingCallback.cs" />
     <Compile Remove="13장 대리자와 이벤트\UsingCallback.cs" />
     <Compile Remove="14장\ExpressionTreeVialLambda.cs" />
-    <Compile Remove="8장\7.8 상속으로 코드 재활용\Inheritance.cs" />
-    <Compile Remove="8장\test.cs" />
-    <Compile Remove="8장\test2.cs" />
+    <Compile Remove="8장 인트페이스와 추상클래스\7.8 상속으로 코드 재활용\Inheritance.cs" />
+    <Compile Remove="8장 인트페이스와 추상클래스\test2.cs" />
     <Compile Remove="7장 클래스\7.14 중첩클래스\NestedClass.cs" />
     <Compile Remove="7장 클래스\7.15 분할클래스\PartialClass.cs" />
     <Compile Remove="Getter_Setter테스트\Getter_Setter_Main.cs" />
@@ -39,6 +38,7 @@
     <Compile Remove="테스트 및 연습\ActionTest.cs" />
     <Compile Remove="테스트 및 연습\ArrayTest.cs" />
     <Compile Remove="테스트 및 연습\DataTableLinq.cs" />
+    <Compile Remove="테스트 및 연습\DataTableSort.cs" />
     <Compile Remove="테스트 및 연습\DateTimeParse.cs" />
     <Compile Remove="테스트 및 연습\PointerTest.cs" />
     <Compile Remove="테스트 및 연습\RambdaTest.cs" />
@@ -121,8 +121,7 @@
     <None Include="14장\ExpressionTreeVialLambda.cs" />
     <None Include="7장 클래스\7.13 읽기전용 필드\ReadOnly.cs" />
     <None Include="7장 클래스\7.2_클래스의선언과 객체의 생성\BasicClass.cs" />
-    <None Include="8장\test.cs" />
-    <None Include="8장\test2.cs" />
+    <None Include="8장 인트페이스와 추상클래스\test2.cs" />
     <None Include="7장 클래스\7.14 중첩클래스\NestedClass.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
     <None Include="7장 클래스\7.15 분할클래스\PartialClass.cs" />
     <None Include="Getter_Setter테스트\Getter_Setter_Main.cs" />
@@ -130,6 +129,7 @@
     <None Include="테스트 및 연습\ActionTest.cs" />
     <None Include="테스트 및 연습\ArrayTest.cs" />
     <None Include="테스트 및 연습\DataTableLinq.cs" />
+    <None Include="테스트 및 연습\DataTableSort.cs" />
     <None Include="테스트 및 연습\DateTimeParse.cs" />
     <None Include="테스트 및 연습\PointerTest.cs" />
     <None Include="테스트 및 연습\RambdaTest.cs" />
