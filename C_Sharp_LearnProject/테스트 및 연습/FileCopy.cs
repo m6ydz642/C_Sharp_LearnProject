@@ -13,6 +13,8 @@ namespace FileCopy
             DirectoryInfo sourcedir = new DirectoryInfo(sourceDirName);
             DirectoryInfo destdir = new DirectoryInfo(destDirName);
 
+         
+
             if (!sourcedir.Exists)
             {
                 throw new DirectoryNotFoundException(
@@ -21,10 +23,15 @@ namespace FileCopy
             }
 
             DirectoryInfo[] sourcedirs = sourcedir.GetDirectories();
-            DirectoryInfo[] destdirs = destdir.GetDirectories();
 
-            // If the destination directory doesn't exist, create it.       
-            Directory.CreateDirectory(destDirName);
+            // If the destination directory doesn't exist, create it.
+            if (!destdir.Exists) // 복사될 파일에 경로가 존재하지 않으면
+            {
+                var sourcefileinfo2 = new FileInfo(sourceDirName);
+                Directory.CreateDirectory(destDirName); // 대상 디렉토리에 폴더 생성
+                Directory.SetLastWriteTime(destDirName, sourcefileinfo2.LastWriteTime); 
+                // 해당 destDirName 하위지정된 폴더이름을 sourceName 하위지정폴더의 마지막 작성날짜로 변경
+            }
 
             // Get the files in the directory and copy them to the new location.
             FileInfo[] sourcefiles = sourcedir.GetFiles(); // 현재 경로의 파일
@@ -32,13 +39,11 @@ namespace FileCopy
 
             DateTime sourceLastWriteTime;
             DateTime destLastWriteTime;
-            string sourceFileName;
-            string destFileName;
-
-  
 
             foreach (FileInfo sourcefile in sourcefiles)
             {
+                // winform 사용시 Progress bar 여기다가 타이머나 반복 횟수로 로딩바 조절예정
+
                 string tempPath = Path.Combine(destDirName, sourcefile.Name);
                 var sourcefileinfo = new FileInfo(sourceDirName + "\\" + sourcefile.Name);
 
@@ -54,22 +59,23 @@ namespace FileCopy
                     {
                             sourcefile.CopyTo(tempPath, true); // source파일에서 destfile로 덮어쓰기 및 복사
                     }
-                    if (!System.IO.File.Exists(tempPath))// destfile경로를 반복하고 있을때 source경로의 대상파일이 destfile에 존재하지않으면 
-                    {
-                        sourcefile.CopyTo(tempPath, false); // source파일에서 destfile로 덮어쓰기 및 복사
-                    }
-
                 }
-               
+
+                if (!System.IO.File.Exists(tempPath))
+                    // sourcefile 경로를 반복하고 있을때 destfileinfo 경로의 대상파일이 destfile에 존재하지않으면 
+                {
+                    sourcefile.CopyTo(tempPath, false); // source파일에서 destfile로 덮어쓰기 및 복사
+                }
             }
 
             // If copying subdirectories, copy them and their contents to new location.
             if (copySubDirs)
             {
-                foreach (DirectoryInfo subdir in sourcedirs) // 폴더 복사도 위 파일과 동일하게 해볼예정
+                foreach (DirectoryInfo sourcedirinfo in sourcedirs) 
+                    // 디렉토리를 재귀로 호출하기 때문에 새로운 디렉토리내에 파일이 생기면 같이 복사 or 수정검사함
                 {
-                    string tempPath = Path.Combine(destDirName, subdir.Name);
-                    DirectoryCopy(subdir.FullName, tempPath, copySubDirs);
+                    string tempPath = Path.Combine(destDirName, sourcedirinfo.Name);
+                    DirectoryCopy(sourcedirinfo.FullName, tempPath, copySubDirs);
                 }
             }
         }
