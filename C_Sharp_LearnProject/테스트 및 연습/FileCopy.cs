@@ -25,12 +25,14 @@ namespace FileCopy
             DirectoryInfo[] sourcedirs = sourcedir.GetDirectories();
 
             // If the destination directory doesn't exist, create it.
+            var sourcefileinfo2 = new FileInfo(sourceDirName);
             if (!destdir.Exists) // 복사될 파일에 경로가 존재하지 않으면
             {
-                var sourcefileinfo2 = new FileInfo(sourceDirName);
                 Directory.CreateDirectory(destDirName); // 대상 디렉토리에 폴더 생성
-                Directory.SetLastWriteTime(destDirName, sourcefileinfo2.LastWriteTime); 
-                // 해당 destDirName 하위지정된 폴더이름을 sourceName 하위지정폴더의 마지막 작성날짜로 변경
+             // Directory.SetLastWriteTime(destDirName, sourcefileinfo2.LastWriteTime);  // 해당 destDirName 하위지정된 폴더이름을 sourceName 하위지정폴더의 마지막 작성날짜로 변경            
+
+             // 여기서 의미없음 (재귀함수 호출시 폴더가 만들어질때 파일이 있으면 반복문을 돌면서 마지막 수정시간이 파일생성이 되면서 시스템에 의해 바뀌기 때문)
+
             }
 
             // Get the files in the directory and copy them to the new location.
@@ -67,6 +69,10 @@ namespace FileCopy
                     sourcefile.CopyTo(tempPath, false); // source파일에서 destfile로 덮어쓰기 및 복사
                 }
             }
+            Directory.SetLastWriteTime(destDirName, sourcefileinfo2.LastWriteTime); // 디렉토리 마지막 수정시간 원상복귀 (source folder와 같이)
+            // 파일추가 반복문을 다 돌고 마지막에 재귀함수 호출 시 추가된 create folder로 선택되어있는 수정시간을 가져와 적용함
+            // (sourcefileinfo2 에서 재귀함수로 호출할때 선택되어있는 시간임)
+
 
             // If copying subdirectories, copy them and their contents to new location.
             if (copySubDirs)
