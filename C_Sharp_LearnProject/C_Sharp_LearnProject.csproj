@@ -42,6 +42,7 @@
     <Compile Remove="테스트 및 연습\DataTableLinq.cs" />
     <Compile Remove="테스트 및 연습\DataTableSort.cs" />
     <Compile Remove="테스트 및 연습\DateTimeParse.cs" />
+    <Compile Remove="테스트 및 연습\FileCopy.cs" />
     <Compile Remove="테스트 및 연습\ObjectCopyTest.cs" />
     <Compile Remove="테스트 및 연습\PointerTest.cs" />
     <Compile Remove="테스트 및 연습\RambdaTest.cs" />
@@ -135,6 +136,7 @@
     <None Include="테스트 및 연습\DataTableLinq.cs" />
     <None Include="테스트 및 연습\DataTableSort.cs" />
     <None Include="테스트 및 연습\DateTimeParse.cs" />
+    <None Include="테스트 및 연습\FileCopy.cs" />
     <None Include="테스트 및 연습\ObjectCopyTest.cs" />
     <None Include="테스트 및 연습\PointerTest.cs" />
     <None Include="테스트 및 연습\RambdaTest.cs" />
